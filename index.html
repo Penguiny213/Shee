@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Love 💖</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- 🌌 BACKGROUND -->
+<div class="bg" id="bg"></div>
+
+<!-- ================= LOGIN ================= -->
+<div class="screen active" id="loginScreen">
+
+  <h1 class="glow">Neon Love Access 💖</h1>
+
+  <input id="girlfriendName" placeholder="Enter your name...">
+
+  <div class="btns">
+    <button id="loginBtn">Enter 💕</button>
+    <button id="cancelBtn">Cancel 😼</button>
+  </div>
+
+</div>
+
+<!-- ================= MESSAGE ================= -->
+<div class="screen" id="messageScreen">
+
+  <h1 id="greet"></h1>
+
+  <input id="nameInput" readonly>
+
+  <button id="proceedBtn">Open Letter 💌</button>
+
+</div>
+
+<!-- ================= LETTER ================= -->
+<div class="screen" id="letterScreen">
+
+  <div class="letter">
+
+    <h2>💌 A Cinematic Letter</h2>
+
+    <p>
+      Di ko man kaya maibigay lahat,<br><br>
+      tulad ng naibibigay sayo ng malapit,<br><br>
+      sana magustuhan mo itong munting regalo ko 💖
+    </p>
+
+    <h1 class="question">Pwede ba kitang ligawan? 💕</h1>
+
+    <div class="choice">
+      <button id="yesBtn">YES 💖</button>
+      <button id="noBtn">NO 😳</button>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ================= POPUP ================= -->
+<div class="popup" id="catPopup">
+  <div class="popup-content">
+
+    <span class="closePopup">×</span>
+
+    <img src="cat.jpg" class="cat">
+
+    <h2>No, you can't cancel 😾💖</h2>
+
+    <button id="continueBtn">Okay 😳</button>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
