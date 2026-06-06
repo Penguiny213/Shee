@@ -192,3 +192,4 @@ function letterRevealSync() {
         }, 80);
     }
 }
+
