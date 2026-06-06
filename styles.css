@@ -72,6 +72,8 @@ z-index:-1;
 .heart{
 position:absolute;
 color:#ff4dff;
+pointer-events:none;
+z-index:-1;
 
 text-shadow:
 0 0 10px #ff00ff,
@@ -106,6 +108,9 @@ position:absolute;
 
 width:8px;
 height:8px;
+
+pointer-events:none;
+z-index:-1;
 
 border-radius:50%;
 
@@ -534,8 +539,9 @@ padding:11px 18px;
 
 #floatingCat{
 position:absolute;
-width:120px;
+width:100px;
 height:auto;
+object-fit:contain;
 
 left:-150px;
 bottom:20px;
