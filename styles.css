@@ -133,6 +133,7 @@ opacity:0;
 }
 
 /* ================= SCREEN ================= */
+@media (max-width:600px) {
 
 .screen{
 display:none;
@@ -145,15 +146,15 @@ text-align:center;
 
 border-radius:30px;
 
-background:rgba(15,0,25,.75);
+background:rgba(15,0,25,.92);
 
-backdrop-filter:blur(18px);
+backdrop-filter:none;
 
 border:1px solid rgba(255,0,255,.25);
 
 box-shadow:
 0 0 25px rgba(255,0,255,.35),
-0 0 90px rgba(255,0,255,.15);
+0 0 90px rgba(214, 16, 214, 0.15);
 
 animation:floatCard 4s ease-in-out infinite;
 
@@ -175,6 +176,7 @@ transform:translateY(0);
 transform:translateY(-8px);
 }
 
+}
 }
 
 /* ================= TITLE ================= */
@@ -528,4 +530,51 @@ font-size:.9rem;
 padding:11px 18px;
 }
 
+}
+
+#floatingCat{
+position:absolute;
+width:120px;
+height:auto;
+
+left:-150px;
+bottom:20px;
+
+pointer-events:none;
+
+filter:
+drop-shadow(0 0 10px #ff00ff)
+drop-shadow(0 0 25px #ff00ff);
+
+animation:catMove 18s linear infinite,
+catBob 3s ease-in-out infinite;
+}
+
+/* move across MESSAGE screen only */
+@keyframes catMove{
+
+0%{
+left:-150px;
+transform:scaleX(1);
+}
+
+50%{
+left:calc(100% - 120px);
+transform:scaleX(1);
+}
+
+51%{
+transform:scaleX(-1);
+}
+
+100%{
+left:-150px;
+transform:scaleX(-1);
+}
+}
+
+/* floating up/down */
+@keyframes catBob{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
 }
